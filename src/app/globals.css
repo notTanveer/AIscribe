@@ -81,5 +81,9 @@
 
 .tiptap.ProseMirror {
   outline: none;
-  @apply bg-background text-foreground;
+}
+
+.is-active {
+  border-color: #dadada;
+  border-radius: 2px;
 }
