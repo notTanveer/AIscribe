@@ -2,11 +2,16 @@
 import React from "react";
 import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
+import { NoteType } from "@/lib/db/schema";
 
-type Props = {};
+type Props = {
+  note: NoteType
+};
 
-const TipTapEditor = (props: Props) => {
-  const [editorState, setEditorState] = React.useState("");
+const TipTapEditor = ({ note }: Props) => {
+  const [editorState, setEditorState] = React.useState(
+    note.editorState || `<h1>${note.name}</h1>}`
+  );
   const editor = useEditor({
     autofocus: true,
     extensions: [StarterKit],
