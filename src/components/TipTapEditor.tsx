@@ -64,9 +64,6 @@ const TipTapEditor = ({ note }: Props) => {
     // save to db
     if (debouncedEditorState === "") return;
     saveNote.mutate(undefined, {
-      onSuccess: (data) => {
-        console.log("success update!", data);
-      },
       onError: (err) => {
         console.error(err);
       },
