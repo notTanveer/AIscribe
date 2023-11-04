@@ -7,7 +7,7 @@ import Provider from '@/components/Provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AIdeation',
+  title: 'AIscribe',
   description: 'Manage your notes with ease.',
 }
 
