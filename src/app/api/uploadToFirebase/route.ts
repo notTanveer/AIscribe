@@ -22,7 +22,7 @@ export async function POST(req: Request) {
                 imageUrl: firebase_url,
             })
             .where(eq($notes.id, parseInt(noteId)))
-
+            return new NextResponse('Success', { status: 200 })
     } catch (error) {
         return new NextResponse('Error', { status: 500 })
     }
