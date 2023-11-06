@@ -26,6 +26,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <meta charSet="UTF-8" />
     </div>
       
   )
